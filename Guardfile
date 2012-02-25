@@ -13,7 +13,7 @@ guard 'spork', rspec: true, cucumber: false, test_unit: false, bundler: false, w
   watch(%r{features/support/}) { :cucumber }
 end
 
-guard 'rspec', :version => 2, :cli => "--drb" do
+guard 'rspec', :version => 2, :cli => "--drb", all_after_pass: false do
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^lib/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
   watch('spec/spec_helper.rb')  { "spec" }

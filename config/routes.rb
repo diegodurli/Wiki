@@ -1,12 +1,14 @@
 Wiki::Application.routes.draw do
 
-  root to: 'pages#home'
+  # root to: 'pages#home'
 
   resources :users do
     member do
       resources :articles
     end
   end
+
+  # match '/about', to: 'pages#about'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
