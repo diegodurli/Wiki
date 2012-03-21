@@ -1,6 +1,6 @@
 == Simple Wiki
 
-I'm trying to develop a simple wiki. It's a experimental project.
+I'm trying to develop a simple wiki. It's an experimental project.
 
 It will be able to:
  * Authenticate a user
